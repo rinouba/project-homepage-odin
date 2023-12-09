@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/*================
+    section About Me
+  ================*/
+
+.background-aqua {
+  background-color: #0891b2;
+  height: 65vh;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+  z-index: 2;
+}
+
+.container-aboutme {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0;
+  color: #f8d5d5;
+  flex-wrap: wrap;
+}
+
+/* left side */
+
+.img-left img {
+  width: 30vw;
+  height: auto;
+  border-radius: 9px;
+}
+
+.img-left h1 {
+  margin-top: 10px;
+  font-size: 2rem;
+  left: 0;
+  text-align: center;
+}
+
+/* right side */
+
+.right h2{
+  font-size: 4rem;
+}
+
+.right p {
+  margin-top: 20px;
+  max-width: 40vw;
+  font-size: 1.5rem;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.right div{
+  margin-top: 50px;
+  font-size: 2.5rem;
+  text-align: end;
+}
+
+i{
+  cursor: pointer;
+}
+
+/*================
+  Section My Work
+================*/
+
+.mywork{
+  margin-top: 10%;
+}
+
+.mywork h1{
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+
+.cards{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.card{
+  max-width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 10px;
+  margin: 25px 10px;
+}
+
+.top-card{
+  background-color: #9e1c1c;
+  height: 60%;
+}
+
+.top-card h2{
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  font-size: 2rem;
+}
+
+.bottem-card{
+  background-color: #fff;
+  height: 40%;
+  padding-bottom: 20px;
+}
+
+.bottem-card p {
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.inside-bottem{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+/*================
+  Section footer
+================*/
+footer{
+  background-color: #0891b2;
+  padding-top: 20px;
+  color: white;
+}
+.footer{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.left-footer h1{
+  font-size: 3rem;
+}
+
+.left-footer p {
+  margin: 30px 0;
+  font-size: 1.3rem;
+  max-width: 400px;
+}
+
+.left-footer div{
+  font-size: 2rem;
+}
+
+.right-footer img{
+  width: 45vw;
+}
+/* for tablte */
+@media screen and (max-width:1000px) {
+  .img-left img{
+    width: 80vw;
+  }
+  .right-footer img{
+    width: 100%;
+  }
+  .img-left h1{
+    color: #000;
+  }
+  .right h2{
+    color: #000;
+  }
+  .right p{
+    color: #000;
+  }
+  .background-aqua{
+    height: 120vh;
+  }
+  .cards{
+    justify-content: center;
+  }
+}
+/* for phones  */
+@media screen and (max-width:500px) {
+  .background-aqua{
+    height: 150vh;
+  }
+}
